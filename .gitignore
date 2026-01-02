@@ -1,0 +1,15 @@
+
+/inspiration
+/tests/debug_output
+pyotp.ipynb
+.env
+*.pyc
+
+
+
+*.pyc
+/jainam_api_client.egg-info
+tests/test_results.json
+tests/test_output.txt
+tests/order_test_output.txt
+tests/order_test_results.json
