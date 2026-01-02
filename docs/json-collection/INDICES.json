@@ -1,0 +1,575 @@
+{
+  "INDICES": [
+    {
+      "symbol": "NIFTY 50",
+      "exch": "NSE",
+      "token": "26000"
+    },
+    {
+      "symbol": "NIFTY GROWSECT 15",
+      "exch": "NSE",
+      "token": "26001"
+    },
+    {
+      "symbol": "NIFTY50 PR 2X LEV",
+      "exch": "NSE",
+      "token": "26002"
+    },
+    {
+      "symbol": "NIFTY 500",
+      "exch": "NSE",
+      "token": "26004"
+    },
+    {
+      "symbol": "NIFTY IT",
+      "exch": "NSE",
+      "token": "26008"
+    },
+    {
+      "symbol": "NIFTY BANK",
+      "exch": "NSE",
+      "token": "26009"
+    },
+    {
+      "symbol": "NIFTY MIDCAP 100",
+      "exch": "NSE",
+      "token": "26011"
+    },
+    {
+      "symbol": "NIFTY 100",
+      "exch": "NSE",
+      "token": "26012"
+    },
+    {
+      "symbol": "NIFTY NEXT 50",
+      "exch": "NSE",
+      "token": "26013"
+    },
+    {
+      "symbol": "NIFTY MIDCAP 50",
+      "exch": "NSE",
+      "token": "26014"
+    },
+    {
+      "symbol": "INDIA VIX",
+      "exch": "NSE",
+      "token": "26017"
+    },
+    {
+      "symbol": "NIFTY REALTY",
+      "exch": "NSE",
+      "token": "26018"
+    },
+    {
+      "symbol": "NIFTY INFRA",
+      "exch": "NSE",
+      "token": "26019"
+    },
+    {
+      "symbol": "NIFTY ENERGY",
+      "exch": "NSE",
+      "token": "26020"
+    },
+    {
+      "symbol": "NIFTY FMCG",
+      "exch": "NSE",
+      "token": "26021"
+    },
+    {
+      "symbol": "NIFTY MNC",
+      "exch": "NSE",
+      "token": "26022"
+    },
+    {
+      "symbol": "NIFTY PHARMA",
+      "exch": "NSE",
+      "token": "26023"
+    },
+    {
+      "symbol": "NIFTY PSE",
+      "exch": "NSE",
+      "token": "26024"
+    },
+    {
+      "symbol": "NIFTY PSU BANK",
+      "exch": "NSE",
+      "token": "26025"
+    },
+    {
+      "symbol": "NIFTY SERV SECTOR",
+      "exch": "NSE",
+      "token": "26026"
+    },
+    {
+      "symbol": "NIFTY AUTO",
+      "exch": "NSE",
+      "token": "26029"
+    },
+    {
+      "symbol": "NIFTY METAL",
+      "exch": "NSE",
+      "token": "26030"
+    },
+    {
+      "symbol": "NIFTY MEDIA",
+      "exch": "NSE",
+      "token": "26031"
+    },
+    {
+      "symbol": "NIFTY SMLCAP 100",
+      "exch": "NSE",
+      "token": "26032"
+    },
+    {
+      "symbol": "NIFTY 200",
+      "exch": "NSE",
+      "token": "26033"
+    },
+    {
+      "symbol": "NIFTY DIV OPPS 50",
+      "exch": "NSE",
+      "token": "26034"
+    },
+    {
+      "symbol": "NIFTY COMMODITIES",
+      "exch": "NSE",
+      "token": "26035"
+    },
+    {
+      "symbol": "NIFTY CONSUMPTION",
+      "exch": "NSE",
+      "token": "26036"
+    },
+    {
+      "symbol": "NIFTY FIN SERVICE",
+      "exch": "NSE",
+      "token": "26037"
+    },
+    {
+      "symbol": "NIFTY50 DIV POINT",
+      "exch": "NSE",
+      "token": "26038"
+    },
+    {
+      "symbol": "NIFTY100 LIQ 15",
+      "exch": "NSE",
+      "token": "26040"
+    },
+    {
+      "symbol": "NIFTY CPSE",
+      "exch": "NSE",
+      "token": "26041"
+    },
+    {
+      "symbol": "NIFTY50 PR 1X INV",
+      "exch": "NSE",
+      "token": "26042"
+    },
+    {
+      "symbol": "NIFTY50 TR 2X LEV",
+      "exch": "NSE",
+      "token": "26043"
+    },
+    {
+      "symbol": "NIFTY50 TR 1X INV",
+      "exch": "NSE",
+      "token": "26044"
+    },
+    {
+      "symbol": "NIFTY50 VALUE 20",
+      "exch": "NSE",
+      "token": "26045"
+    },
+    {
+      "symbol": "NIFTY MID LIQ 15",
+      "exch": "NSE",
+      "token": "26046"
+    },
+    {
+      "symbol": "NIFTY PVT BANK",
+      "exch": "NSE",
+      "token": "26047"
+    },
+    {
+      "symbol": "NIFTY100 QUALTY30",
+      "exch": "NSE",
+      "token": "26048"
+    },
+    {
+      "symbol": "NIFTY GS 8 13YR",
+      "exch": "NSE",
+      "token": "26049"
+    },
+    {
+      "symbol": "NIFTY GS 10YR",
+      "exch": "NSE",
+      "token": "26050"
+    },
+    {
+      "symbol": "NIFTY GS 10YR CLN",
+      "exch": "NSE",
+      "token": "26051"
+    },
+    {
+      "symbol": "NIFTY GS 4 8YR",
+      "exch": "NSE",
+      "token": "26052"
+    },
+    {
+      "symbol": "NIFTY GS 11 15YR",
+      "exch": "NSE",
+      "token": "26053"
+    },
+    {
+      "symbol": "NIFTY GS 15YRPLUS",
+      "exch": "NSE",
+      "token": "26054"
+    },
+    {
+      "symbol": "NIFTY GS COMPSITE",
+      "exch": "NSE",
+      "token": "26055"
+    },
+    {
+      "symbol": "NIFTY50 EQL WGT",
+      "exch": "NSE",
+      "token": "26056"
+    },
+    {
+      "symbol": "NIFTY100 EQL WGT",
+      "exch": "NSE",
+      "token": "26057"
+    },
+    {
+      "symbol": "NIFTY100 LOWVOL30",
+      "exch": "NSE",
+      "token": "26058"
+    },
+    {
+      "symbol": "NIFTY ALPHA 50",
+      "exch": "NSE",
+      "token": "26059"
+    },
+    {
+      "symbol": "NIFTY MIDCAP 150",
+      "exch": "NSE",
+      "token": "26060"
+    },
+    {
+      "symbol": "NIFTY SMLCAP 50",
+      "exch": "NSE",
+      "token": "26061"
+    },
+    {
+      "symbol": "NIFTY SMLCAP 250",
+      "exch": "NSE",
+      "token": "26062"
+    },
+    {
+      "symbol": "NIFTY MIDSML 400",
+      "exch": "NSE",
+      "token": "26063"
+    },
+    {
+      "symbol": "NIFTY200 QUALTY30",
+      "exch": "NSE",
+      "token": "26064"
+    },
+    {
+      "symbol": "NIFTY MIDCAP SELECT",
+      "exch": "NSE",
+      "token": "26074"
+    },
+    {
+      "symbol": "NIFTY ALPHALOWVOL",
+      "exch": "NSE",
+      "token": "26066"
+    },
+    {
+      "symbol": "SENSEX",
+      "exch": "BSE",
+      "token": "1"
+    },
+    {
+      "symbol": "BSE100",
+      "exch": "BSE",
+      "token": "2"
+    },
+    {
+      "symbol": "BSE200",
+      "exch": "BSE",
+      "token": "3"
+    },
+    {
+      "symbol": "BSE500",
+      "exch": "BSE",
+      "token": "4"
+    },
+    {
+      "symbol": "BSE CG",
+      "exch": "BSE",
+      "token": "7"
+    },
+    {
+      "symbol": "BSE CD",
+      "exch": "BSE",
+      "token": "8"
+    },
+    {
+      "symbol": "BSEPSU",
+      "exch": "BSE",
+      "token": "10"
+    },
+    {
+      "symbol": "TECK",
+      "exch": "BSE",
+      "token": "11"
+    },
+    {
+      "symbol": "BANKEX",
+      "exch": "BSE",
+      "token": "12"
+    },
+    {
+      "symbol": "AUTO",
+      "exch": "BSE",
+      "token": "13"
+    },
+    {
+      "symbol": "METAL",
+      "exch": "BSE",
+      "token": "14"
+    },
+    {
+      "symbol": "OILGAS",
+      "exch": "BSE",
+      "token": "15"
+    },
+    {
+      "symbol": "REALTY",
+      "exch": "BSE",
+      "token": "21"
+    },
+    {
+      "symbol": "POWER",
+      "exch": "BSE",
+      "token": "22"
+    },
+    {
+      "symbol": "BSEIPO",
+      "exch": "BSE",
+      "token": "23"
+    },
+    {
+      "symbol": "GREENX",
+      "exch": "BSE",
+      "token": "25"
+    },
+    {
+      "symbol": "CARBON",
+      "exch": "BSE",
+      "token": "26"
+    },
+    {
+      "symbol": "SMEIPO",
+      "exch": "BSE",
+      "token": "27"
+    },
+    {
+      "symbol": "INFRA",
+      "exch": "BSE",
+      "token": "28"
+    },
+    {
+      "symbol": "CPSE",
+      "exch": "BSE",
+      "token": "29"
+    },
+    {
+      "symbol": "MIDCAP",
+      "exch": "BSE",
+      "token": "30"
+    },
+    {
+      "symbol": "SMLCAP",
+      "exch": "BSE",
+      "token": "31"
+    },
+    {
+      "symbol": "BSEFMC",
+      "exch": "BSE",
+      "token": "32"
+    },
+    {
+      "symbol": "BSE HC",
+      "exch": "BSE",
+      "token": "33"
+    },
+    {
+      "symbol": "BSE IT",
+      "exch": "BSE",
+      "token": "34"
+    },
+    {
+      "symbol": "MFG",
+      "exch": "BSE",
+      "token": "35"
+    },
+    {
+      "symbol": "ALLCAP",
+      "exch": "BSE",
+      "token": "36"
+    },
+    {
+      "symbol": "BASMTR",
+      "exch": "BSE",
+      "token": "37"
+    },
+    {
+      "symbol": "CDGS",
+      "exch": "BSE",
+      "token": "38"
+    },
+    {
+      "symbol": "ENERGY",
+      "exch": "BSE",
+      "token": "39"
+    },
+    {
+      "symbol": "FIN",
+      "exch": "BSE",
+      "token": "40"
+    },
+    {
+      "symbol": "INDSTR",
+      "exch": "BSE",
+      "token": "41"
+    },
+    {
+      "symbol": "LRGCAP",
+      "exch": "BSE",
+      "token": "42"
+    },
+    {
+      "symbol": "MIDSEL",
+      "exch": "BSE",
+      "token": "43"
+    },
+    {
+      "symbol": "SMLSEL",
+      "exch": "BSE",
+      "token": "44"
+    },
+    {
+      "symbol": "TELCOM",
+      "exch": "BSE",
+      "token": "45"
+    },
+    {
+      "symbol": "UTILS",
+      "exch": "BSE",
+      "token": "46"
+    },
+    {
+      "symbol": "SNSX50",
+      "exch": "BSE",
+      "token": "47"
+    },
+    {
+      "symbol": "SNXT50",
+      "exch": "BSE",
+      "token": "48"
+    },
+    {
+      "symbol": "BHRT22",
+      "exch": "BSE",
+      "token": "49"
+    },
+    {
+      "symbol": "ESG100",
+      "exch": "BSE",
+      "token": "50"
+    },
+    {
+      "symbol": "MID150",
+      "exch": "BSE",
+      "token": "55"
+    },
+    {
+      "symbol": "SML250",
+      "exch": "BSE",
+      "token": "56"
+    },
+    {
+      "symbol": "LMI250",
+      "exch": "BSE",
+      "token": "57"
+    },
+    {
+      "symbol": "MSL400",
+      "exch": "BSE",
+      "token": "58"
+    },
+    {
+      "symbol": "BSEDSI",
+      "exch": "BSE",
+      "token": "59"
+    },
+    {
+      "symbol": "BSEEVI",
+      "exch": "BSE",
+      "token": "60"
+    },
+    {
+      "symbol": "BSELVI",
+      "exch": "BSE",
+      "token": "61"
+    },
+    {
+      "symbol": "BSEMOI",
+      "exch": "BSE",
+      "token": "62"
+    },
+    {
+      "symbol": "BSEQUI",
+      "exch": "BSE",
+      "token": "63"
+    },
+    {
+      "symbol": "DFRGRI",
+      "exch": "BSE",
+      "token": "64"
+    },
+    {
+      "symbol": "LCTMCI",
+      "exch": "BSE",
+      "token": "65"
+    },
+    {
+      "symbol": "BSEPBI",
+      "exch": "BSE",
+      "token": "66"
+    },
+    {
+      "symbol": "MCXAGRI",
+      "exch": "MCX",
+      "token": "500201"
+    },
+    {
+      "symbol": "MCXCOMDEX",
+      "exch": "MCX",
+      "token": "500202"
+    },
+    {
+      "symbol": "MCXENERGY",
+      "exch": "MCX",
+      "token": "500203"
+    },
+    {
+      "symbol": "MCXMETAL",
+      "exch": "MCX",
+      "token": "500204"
+    },
+    {}
+  ]
+}

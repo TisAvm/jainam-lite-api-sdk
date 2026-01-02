@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "394b6c4f-d5d2-43c6-ae9e-679d6543fa84",
+		"name": "Vendor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getSessionId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"checkSum\": \"SHA-256 (userId + authCode + apiSecret)\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://protrade.jainam.in/omt/auth/sso/vendor/getUserDetails",
+					"protocol": "https",
+					"host": [
+						"protrade",
+						"jainam",
+						"in"
+					],
+					"path": [
+						"omt",
+						"auth",
+						"sso",
+						"vendor",
+						"getUserDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

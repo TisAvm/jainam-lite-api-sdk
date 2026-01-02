@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "08ee6ddb-8144-4e3b-879b-7722788ab035",
+		"name": "jainam open api live Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30074913"
+	},
+	"item": [
+		{
+			"name": "getUserDetails",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"checkSum\":\"cbd03b6359dfc74cb6b6ec188c5202ad4895d43875b598bee5ec327f5d3e29ad\"\r\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/vendor/getUserDetails",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"vendor",
+						"getUserDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "placeOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"exchange\": \"nse\",\r\n       \"instrumentId\": \"14366\",\r\n        \"transactionType\": \"buy\",\r\n        \"quantity\": 1,\r\n        \"product\": \"LONGTERM\",\r\n        \"orderComplexity\": \"amo\",\r\n        \"orderType\": \"limit\",\r\n        \"price\": \"6\",\r\n        \"validity\": \"day\",\r\n        \"slTriggerPrice\": \"7\",\r\n        \"marketProtectionPercent\": \"\",\r\n        \"targetLegPrice\": \"\",//targetPrice\r\n        \"slLegPrice\":\"\", //stoploss\r\n        \"trailingSlAmount\": \"\",\r\n        \"apiOrderSource\": \"\",\r\n        \"algoId\": \"\",\r\n        \"orderTag\": \"test nse market\",\r\n        \"disclosedQuantity\":\"30\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/placeorder",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"placeorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOrderBook",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/book",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orderHistory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brokerOrderId\":\"250613000003367\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/history",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brokerOrderId\":\"OEBUC00308<6\",\r\n    \"price\":\"7.2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/modify",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"modify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brokerOrderId\":\"OEBUC00308<6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/cancel",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTradeBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/trades",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"trades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkMargin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchange\": \"nse\",\r\n    \"instrumentId\": \"14366\",\r\n    \"transactionType\": \"BUY\",\r\n    \"quantity\": \"20\",\r\n    \"product\": \"LONGTERM\",\r\n    \"orderComplexity\": \"Regular\",\r\n    \"orderType\": \"market\",\r\n    \"price\": \"0.5\",\r\n    \"slLegPrice\": \"0\",\r\n    \"slTriggerPrice\": \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/checkMargin",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"checkMargin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userProfile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/profile//",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"profile",
+						"",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "limits",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/limits/",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"limits",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "positions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/positions",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "holdings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/holdings/cnc",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"holdings",
+						"cnc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PositionSqrOff",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token_open_live}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"instrumentId\": \"452548\",\r\n        \"exchange\": \"MCX\",\r\n        \"transactionType\": \"sell\",\r\n        \"quantity\":1,\r\n        \"orderComplexity\": \"Regular\",\r\n        \"product\": \"LONGTERM\",\r\n        \"orderType\": \"LIMIT\",\r\n        \"price\": \"10.60\",\r\n        \"validity\": \"DAY\",\r\n        \"slTriggerPrice\": \"\",\r\n        \"marketProtectionPercent\": \"\",\r\n        \"targetLegPrice\": \"\",//targetPrice\r\n        \"slLegPrice\":\"\", //stoploss\r\n        \"trailingSlAmount\": \"\",\r\n        \"apiOrderSource\": \"\",\r\n        \"algoId\": \"\",\r\n        \"disclosedQuantity\":\"\",\r\n        \"orderTag\":\"\"\r\n        // \"deviceId\":\"320de4eb90d0526d6970ee063a4b7f8e\"\r\n    }   \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_OPENAPI_LIVE}}/v1/orders/positions/sqroff",
+					"host": [
+						"{{BASE_OPENAPI_LIVE}}"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"positions",
+						"sqroff"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_OPENAPI_LIVE",
+			"value": "https://protrade.jainam.in/omt/api-order-rest",
+			"type": "default"
+		},
+		{
+			"key": "token_open_live",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJFWUkzeHFidnlNaUdpNU1IUFZyakVDcWlnSjJ6ekpCMzQxd1dRRWpQbVBVIn0.eyJleHAiOjE3ODEyNDE0NTcsImlhdCI6MTc0OTcwNTQ1NywianRpIjoiMDhkZDU1M2YtNjg1OS00NzA5LWI4MWEtNjUwZGNiYTczNzVjIiwiaXNzIjoiaHR0cHM6Ly9pZGFhc3Byby5qYWluYW0uaW4vaWRhYXMvcmVhbG1zL0phaW5hbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlMzNiODBiOC1jYWJmLTRlY2UtYjU4YS02NTdkNWNjMDIxYzEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJqYWluYW0iLCJzZXNzaW9uX3N0YXRlIjoiMjMzMjIzOWEtZjJkZi00OTMyLTgwYWUtZWZkMjk2ZjZkY2M5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLWphaW5hbSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImphaW5hbSI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiQUNUSVZFX1VTRVIiLCJBZG1pbiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjIzMzIyMzlhLWYyZGYtNDkzMi04MGFlLWVmZDI5NmY2ZGNjOSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJ1Y2MiOiJtMzkwMyIsIm9tcyI6Ik9NTyIsImNsaWVudFJvbGUiOlsiR1VFU1RfVVNFUiIsIkFDVElWRV9VU0VSIiwiQWRtaW4iXSwibW9iaWxlIjoiOTcxNDg1NTcwMCIsIm5hbWUiOiJOSVJBViBISVRFTkRSQSBLQU5TQVJJV0FMQSIsInByZWZlcnJlZF91c2VybmFtZSI6Im0zOTAzIiwiZ2l2ZW5fbmFtZSI6Ik5JUkFWIEhJVEVORFJBIEtBTlNBUklXQUxBIiwiZW1haWwiOiJuaXJhdmhrQGdtYWlsLmNvbSJ9.i6-pvyuZW_x6u2UVKfW3WYFpHHSH_dzSHDzm4DhbwBEdMxLnF99XShgUpbHJL29sOGrLCuSLir2lMCng9fj77kCADSfbw57kUmxfUWfr7I5YoxxRYV6UZ2d8T5HZ41AqBMFZzqlS6LxuUDyenXkvt1JAQ9ZkfVh05xp6g1ilLWmfc7Mpk5BEfJRJUKB6oLlBCS5tOd1uJo10_j0mQA_pFaEJYf2c6LPZ8p-AOPXSuHcGtTMcf22j6Roxldh_JWS4kL1kxkNznDk5aDSeETTystR_v9jc4D8UphgL2LS-mxv64umDWEFQ1EEEh5YTTbKvZQZPWI_dlQ3fF-RYsak0SQ",
+			"type": "default"
+		}
+	]
+}
