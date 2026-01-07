@@ -80,27 +80,18 @@ class ModifyOrderAPI:
                 }]
             }
         """
+        # Always send all fields per API docs - use empty string for unset values
         payload = {
             "brokerOrderId": broker_order_id,
+            "quantity": quantity if quantity is not None else "",
+            "orderType": order_type or "",
+            "price": price or "",
+            "slTriggerPrice": sl_trigger_price or "",
+            "validity": validity or "",
+            "disclosedQuantity": disclosed_quantity or "",
+            "marketProtectionPercent": market_protection_percent or "",
+            "trailingSLAmount": trailing_sl_amount or "",
         }
-        
-        # Add optional parameters only if provided
-        if quantity is not None:
-            payload["quantity"] = quantity
-        if order_type is not None:
-            payload["orderType"] = order_type
-        if price is not None:
-            payload["price"] = price
-        if sl_trigger_price is not None:
-            payload["slTriggerPrice"] = sl_trigger_price
-        if validity is not None:
-            payload["validity"] = validity
-        if disclosed_quantity is not None:
-            payload["disclosedQuantity"] = disclosed_quantity
-        if market_protection_percent is not None:
-            payload["marketProtectionPercent"] = market_protection_percent
-        if trailing_sl_amount is not None:
-            payload["trailingSLAmount"] = trailing_sl_amount
         
         return self.client.post(urls.MODIFY_ORDER, payload)
     
